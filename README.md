@@ -1,6 +1,18 @@
 # mock-data-generator
 
-### request example
+### API config
+```
+git clone git@github.com:luizTavolaro/mock-data-generator.git
+
+virtualenv .venv
+.venv/bin/activate
+
+pip install -r requiremets.txt
+
+fastapi dev main.py
+```
+
+### Request example
 ```
 curl -X POST http://localhost:8000/ \
   -H "Content-Type: application/json" \
