@@ -12,6 +12,12 @@ pip install -r requiremets.txt
 fastapi dev main.py
 ```
 
+### Container config
+```
+docker build -t mock-data-app
+docker run -p 80:80 mock-data-app 
+```
+
 ### Request example
 ```
 curl -X POST http://localhost:80/ \
@@ -23,10 +29,4 @@ curl -X POST http://localhost:80/ \
     "lim_sup": [0.7, 1.9],
     "var": [0, 0]
   }'
-```
-
-### Container config
-```
-docker build -t mock-data-app
-docker run -p 80:80 mock-data-app 
 ```
