@@ -24,3 +24,9 @@ curl -X POST http://localhost:8000/ \
     "var": [0, 0]
   }'
 ```
+
+### Container config
+```
+docker build -t mock-data-app
+docker run -p 80:80 mock-data-app 
+```
