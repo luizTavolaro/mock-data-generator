@@ -14,7 +14,7 @@ fastapi dev main.py
 
 ### Request example
 ```
-curl -X POST http://localhost:8000/ \
+curl -X POST http://localhost:80/ \
   -H "Content-Type: application/json" \
   -d '{
     "data_inicio": "2024-10-07",
